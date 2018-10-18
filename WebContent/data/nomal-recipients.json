@@ -1,0 +1,24 @@
+[
+	{
+		"name": "HP打印机",
+		"number": "NOR010102-00006-1512144624328",
+		"price": "4,980.00",
+		"inventory": "2",
+		"procurement": "",
+		"inboundDate": "2017-12-02"
+	}, {
+		"name": "HP激光打印",
+		"number": "NOR010102-00002-1452353456339",
+		"price": "1,980.00",
+		"inventory": "15",
+		"procurement": "王枭",
+		"inboundDate": "2016-1-09"
+	}, {
+		"name": "HP笔记本电脑",
+		"number": "NOR010502-00004-1512145300831",
+		"price": "2,000.00",
+		"inventory": "10",
+		"procurement": "",
+		"inboundDate": "2017-12-02"
+	}
+]

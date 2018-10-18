@@ -1,0 +1,45 @@
+[
+	{
+		"name": "大牵引车",
+		"number": "CAR020202-00004-1502757850034",
+		"price": "50,000.00",
+		"inventory": "6",
+		"procurement": "田武圣",
+		"inboundDate": "2017-8-15"
+	}, {
+		"name": "路虎",
+		"number": "CAR020103-00005-1502757244837",
+		"price": "10,000.00",
+		"inventory": "4",
+		"procurement": "刘青",
+		"inboundDate": "2017-8-15"
+	}, {
+		"name": "大牵引车",
+		"number": "CAR020202-00004-1502757850034",
+		"price": "50,000.00",
+		"inventory": "6",
+		"procurement": "田武圣",
+		"inboundDate": "2017-8-15"
+	}, {
+		"name": "路虎",
+		"number": "CAR020103-00005-1502757244837",
+		"price": "10,000.00",
+		"inventory": "4",
+		"procurement": "刘青",
+		"inboundDate": "2017-8-15"
+	}, {
+		"name": "大牵引车",
+		"number": "CAR020202-00004-1502757850034",
+		"price": "50,000.00",
+		"inventory": "6",
+		"procurement": "田武圣",
+		"inboundDate": "2017-8-15"
+	}, {
+		"name": "路虎",
+		"number": "CAR020103-00005-1502757244837",
+		"price": "10,000.00",
+		"inventory": "4",
+		"procurement": "刘青",
+		"inboundDate": "2017-8-15"
+	}
+]

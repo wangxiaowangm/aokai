@@ -1,0 +1,76 @@
+[
+
+	{
+		"empId": 1,
+		"empNO": "BD0020003",
+		"empName": "楚风韩",
+		"empDep": "北京人力资源部",
+		"superior": "-"
+	}, {
+		"empId": 2,
+		"empNO": "BD0010001",
+		"empName": "刘青",
+		"empDep": "北京开发部",
+		"superior": "-"
+	}, {
+		"empId": 3,
+		"empNO": "BD0010003",
+		"empName": "王海川",
+		"empDep": "北京开发部",
+		"superior": "BD0010001 刘青"
+	}, {
+		"empId": 4,
+		"empNO": "BD0010004",
+		"empName": "王光伟",
+		"empDep": "北京开发部",
+		"superior": "BD0010001 刘青"
+	}, {
+		"empId": 5,
+		"empNO": "BD0010006",
+		"empName": "君迪",
+		"empDep": "北京开发部",
+		"superior": "BD0010001 刘青"
+	}, {
+		"empId": 6,
+		"empNO": "BD0040007",
+		"empName": "王枭",
+		"empDep": "北京行政事业部",
+		"superior": "-"
+	}, {
+		"empId": 7,
+		"empNO": "BD0030005",
+		"empName": "曲苗",
+		"empDep": "北京财务部",
+		"superior": "-"
+	}, {
+		"empId": 8,
+		"empNO": "TD0010001",
+		"empName": "田武圣",
+		"empDep": "天津开发部",
+		"superior": "-"
+	}, {
+		"empId": 9,
+		"empNO": "TD0010002",
+		"empName": "王川",
+		"empDep": "天津开发部",
+		"superior": "TD0010001 田武圣"
+	}, {
+		"empId": 10,
+		"empNO": "TD0010003",
+		"empName": "刘青",
+		"empDep": "天津开发部",
+		"superior": "TD0010001 田武圣"
+	}, {
+		"empId": 3,
+		"empNO": "BD0010003",
+		"empName": "王海川",
+		"empDep": "北京开发部",
+		"superior": "BD0010001 刘青"
+	}, {
+		"empId": 4,
+		"empNO": "BD0010004",
+		"empName": "王光伟",
+		"empDep": "北京开发部",
+		"superior": "BD0010001 刘青"
+	}
+]

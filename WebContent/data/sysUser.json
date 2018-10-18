@@ -1,0 +1,29 @@
+[
+
+	{
+		"username": "admin",
+		"permissions": "系统管理",
+		"nickname": "系统管理员",
+		"creTime": "2015-12-23 16:09:30"
+	}, {
+		"username": "nomal",
+		"permissions": "普通资产",
+		"nickname": "普通资产管理员",
+		"creTime": "2015-12-23 16:11:18"
+	}, {
+		"username": "permanent",
+		"permissions": "固定资产",
+		"nickname": "固定资产管理员",
+		"creTime": "2015-12-23 16:11:18"
+	}, {
+		"username": "car",
+		"permissions": "车辆资产",
+		"nickname": "车辆管理",
+		"creTime": "2015-12-23 16:11:19"
+	}, {
+		"username": "finance",
+		"permissions": "财务资产",
+		"nickname": "财务总监",
+		"creTime": "2015-12-23 16:11:19"
+	}
+]

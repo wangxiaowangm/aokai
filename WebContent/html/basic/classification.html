@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../../bootstrap-table/bootstrap-table.css" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<ol class="breadcrumb">
+			<li>
+				<a href="../../starter.html">首页</a>
+			</li>
+			<li class="active">
+				<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>基础信息管理
+			</li>
+			<li class="active">
+				<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>资产分类管理
+			</li>
+		</ol>
+
+		<form class="form-inline">
+			<div class="form-group">
+				<label style="margin-left: 10px;">分类名称：</label>
+				<input type="text" class="form-control" id="inName">
+			</div>
+			<div class="form-group">
+				<label style="margin-left: 10px;">上级分类：</label>
+				<select class="form-control" id="seSuperior">
+					<option>-</option>
+					<option>普通资产</option>
+				</select>
+			</div>
+			<button class="btn btn-primary" style="margin-left: 10px;" onclick="search()">
+			 <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>检索Search
+			 </button>
+		</form>
+
+		<table class="table table-striped" id="table"></table>
+	</body>
+
+	<script src="../../js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/bootstrap-table.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/classification.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/locale/bootstrap-table-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/extensions/export/bootstrap-table-export.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/tableExport.js" type="text/javascript" charset="utf-8"></script>
+</html>

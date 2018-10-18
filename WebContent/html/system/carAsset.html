@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../../bootstrap-table/bootstrap-table.css" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<ol class="breadcrumb">
+			<li>
+				<a href="../../starter.html">首页</a>
+			</li>
+			<li class="active">
+				<span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>资产信息管理
+			</li>
+			<li class="active">
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>车辆资产信息
+			</li>
+		</ol>
+
+		<form class="form-inline">
+			<div class="row" style="font-size: 12px;">
+				<div class="form-group col-md-3">
+					<label style="margin-left: 10px;">资产分类：</label>
+					<select class="form-control">
+						<option>全部</option>
+						<option>2</option>
+					</select>
+					<select class="form-control">
+						<option>全部</option>
+						<option>2</option>
+					</select>
+				</div>
+				<div class="form-group col-md-3">
+					<label style="margin-left: 10px;">资产名称：</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+					<label style="margin-left: 10px;">资产编号：</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+					<label style="margin-left: 10px;">发动机类型：</label>
+					<select class="form-control">
+						<option>全部</option>
+						<option>2</option>
+					</select>
+				</div>
+			</div>
+			<div style="margin-top: 10px; font-size: 12px;" class="row">
+				<div class="form-group col-md-3">
+					<label style="margin-left: 10px;">品牌型号：</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+					<label style="margin-left: 10px;">自动挡：</label>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default active">
+    						<input type="radio" name="options" id="option1" autocomplete="off" checked>是
+  						</label>
+						<label class="btn btn-default">
+    						<input type="radio" name="options" id="option2" autocomplete="off">否
+  						</label>
+					</div>
+				</div>
+				<button class="btn btn-primary col-md-3" style="margin-left: 10px; width: 130px;">
+			 		<span class="glyphicon glyphicon-search" aria-hidden="true" ></span>检索Search
+			 	</button>
+			</div>
+		</form>
+		<div style="margin-top: 10px;">
+			<button class="btn btn-success" onclick="add()">
+			 <span class="glyphicon glyphicon-plus" aria-hidden="true" ></span>新增资产 Add
+			 </button>
+			<button class="btn btn-primary" style="margin-left: 10px;" onclick="instock()">
+			 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>资产入库 Instock
+			 </button>
+			<button class="btn btn-warning" style="margin-left: 10px;" onclick="edit()">
+			 <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>编辑资产 Edit
+			 </button>
+		</div>
+
+		<table class="table table-striped" id="table"></table>
+
+		<div class="modal fade" id="add">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>
+							<span class="glyphicon glyphicon-equalizer"></span>资产信息
+						</h4>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-xs-3 control-label">资产编号：</label>
+								<div class="col-xs-8">
+									<input type="text" class="form-control" id="asNumber">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">资产名称：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" id="name">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">资产分类：</label>
+								<div class="col-xs-8">
+									<div class="form-inline">
+										<select class="form-control">
+											<option>资产领用</option>
+											<option>资产转移</option>
+										</select>
+										<select class="form-control">
+											<option>资产领用</option>
+											<option>资产转移</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">发动机类型：</label>
+								<div class="col-xs-8">
+									<select class="form-control" readonly>
+										<option>资产领用</option>
+										<option>资产转移</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">车辆品牌：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" id="brand">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">车辆型号：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" id="model">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">座位数：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">发动机编号：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" id="meMumber">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">自动挡：</label>
+								<div class="col-xs-8">
+									<div class="btn-group" data-toggle="buttons">
+										<label class="btn btn-default active">
+    										<input type="radio" name="options" id="option1" autocomplete="off" checked>是
+  										</label>
+										<label class="btn btn-default">
+    										<input type="radio" name="options" id="option2" autocomplete="off">否
+  										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">其他说明：</label>
+								<div class="col-xs-8">
+									<textarea class="form-control" rows="2"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" onclick="saveAdd()">
+							<span class="glyphicon glyphicon-floppy-saved" ></span>保存 Save
+						</button>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-remove"></span>取消 Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="instock">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>
+							<span class="glyphicon glyphicon-equalizer"></span>资产入库
+						</h4>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-xs-3 control-label">资产名称：</label>
+								<div class="col-xs-8">
+									<input type="text" class="form-control" id="inName" readonly>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">入库数量：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">入库单价：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<div class="input-group-addon">¥</div>
+										<input type="text" class="form-control" id="inPrice">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">金额合计：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<div class="input-group-addon">¥</div>
+										<input type="text" class="form-control" readonly>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">入库时间：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">资产购置人：</label>
+								<div class="col-xs-8">
+									<select class="form-control">
+										<option>资产领用</option>
+										<option>资产转移</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">备注说明：</label>
+								<div class="col-xs-8">
+									<textarea class="form-control" rows="2"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">
+							<span class="glyphicon glyphicon-save"></span>入库 Instock
+						</button>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-remove"></span>取消 Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="../../js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/bootstrap-table.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/carAsset.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/locale/bootstrap-table-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/extensions/export/bootstrap-table-export.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/tableExport.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

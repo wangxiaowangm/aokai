@@ -1,0 +1,51 @@
+[
+	{	"id":"1",
+		"asNumber": "CAR020301-00008",
+		"name": "大板车",
+		"brand": "奔驰",
+		"model": "FT-Y",
+		"meMumber": "DS7585"
+	}, {
+		"id":"2",
+		"asNumber": "CAR020202-00003",
+		"name": "大牵引",
+		"brand": "红旗",
+		"model": "冲锋",
+		"meMumber": "SDSA45852"
+	}, {
+		"id":"3",
+		"asNumber": "CAR020203-00008",
+		"name": "SUV",
+		"brand": "路虎",
+		"model": "揽胜",
+		"meMumber": "DS5241"
+	}, {
+		"id":"4",
+		"asNumber": "CAR020204-00007",
+		"name": "灭火车",
+		"brand": "奔驰",
+		"model": "救火员",
+		"meMumber": "WDF8546"
+	}, {
+		"id":"5",
+		"asNumber": "CAR020302-00009",
+		"name": "抢我",
+		"brand": "抢我",
+		"model": "抢我",
+		"meMumber": "AAA2525"
+	}, {
+		"id":"6",
+		"asNumber": "CAR020202-00004",
+		"name": "大牵引车",
+		"brand": "东方",
+		"model": "赫赫",
+		"meMumber": "SED4585"
+	}, {
+		"id":"7",
+		"asNumber": "CAR020102-00006",
+		"name": "夏利",
+		"brand": "现代",
+		"model": "跃进",
+		"meMumber": "SDS525"
+	}
+]

@@ -1,0 +1,39 @@
+[
+	{
+		"asNumber": "NOR010102-000006",
+		"name": "HP打印机",
+		"brand": "惠普",
+		"model": "A4打印机",
+		"supplier": "京东1233"
+	},{
+		"asNumber": "NOR010502-000004",
+		"name": "HP笔记本电脑",
+		"brand": "惠普",
+		"model": "i5 8G 256SSD",
+		"supplier": "京东1233"
+	},{
+		"asNumber": "NOR010502-000003",
+		"name": "教师用电脑",
+		"brand": "联想",
+		"model": "Thinkpad E431",
+		"supplier": "联想中国233432423"
+	},{
+		"asNumber": "NOR010102-000002",
+		"name": "HP激光打印",
+		"brand": "惠普",
+		"model": "DE33364",
+		"supplier": "HP中国01023384848"
+	},{
+		"asNumber": "NOR010501-000007",
+		"name": "SVN服务器",
+		"brand": "群晖",
+		"model": "218j",
+		"supplier": "京东23333323"
+	},{
+		"asNumber": "NOR010502-000005",
+		"name": "联想E470c",
+		"brand": "联想Tinkpad",
+		"model": "E470c i5 14寸 8G 500G",
+		"supplier": "京东1233"
+	}
+]

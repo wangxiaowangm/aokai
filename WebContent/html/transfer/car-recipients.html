@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../../bootstrap-table/bootstrap-table.css" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+
+		<ol class="breadcrumb">
+			<li>
+				<a href="../../starter.html">首页</a>
+			</li>
+			<li class="active">
+				<span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>资产流转管理
+			</li>
+			<li class="active">
+				<span class="glyphicon glyphicon-transfer" aria-hidden="true"></span>车辆资产流转管理
+			</li>
+		</ol>
+
+		<form class="form-inline">
+			<div class="form-group">
+				<label style="margin-left: 10px;">资产操作：</label>
+				<select class="form-control" onchange="window.location=this.value;">
+					<option value="car-recipients.html">资产领用</option>
+					<option value="car-transfer.html">资产转移</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label style="margin-left: 10px;">资产名称：</label>
+				<input type="text" class="form-control">
+			</div>
+			<div class="form-group">
+				<label style="margin-left: 10px;">批次编号：</label>
+				<input type="text" class="form-control">
+			</div>
+			<button class="btn btn-primary" style="margin-left: 10px;">
+			 <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>检索Search
+			 </button>
+		</form>
+
+		<label style="margin-top: 10px; font-size: large;">可领用资产列表：</label>
+		<table class="table table-striped" id="table"></table>
+
+		<div class="modal fade" id="recipients">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4>
+							<span class="glyphicon glyphicon-equalizer"></span>资产流转-资产领用
+						</h4>
+					</div>
+					<div class="modal-body">
+
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-xs-3 control-label">资产信息：</label>
+								<div class="col-xs-8">
+									<input type="text" class="form-control" id="name" readonly>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">操作数量：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control" id="number">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">单价：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<div class="input-group-addon">¥</div>
+										<input type="text" class="form-control" id="price" readonly>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">合计总价：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<div class="input-group-addon">¥</div>
+										<input type="text" class="form-control" id="sum" readonly>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">操作时间：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">领用人：</label>
+								<div class="col-xs-8">
+									<div class="input-group">
+										<select class="form-control" id="procurement">
+
+										</select>
+										<div class="input-group-addon" style="color: red;">*</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-xs-3 control-label">备注说明：</label>
+								<div class="col-xs-8">
+									<textarea class="form-control" rows="2"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">
+							<span class="glyphicon glyphicon-share"></span>出库 Checkout
+						</button>
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-remove"></span>取消 Cancel
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="../../js/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/bootstrap-table.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/car-recipients.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/locale/bootstrap-table-zh-CN.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../bootstrap-table/extensions/export/bootstrap-table-export.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/tableExport.js" type="text/javascript" charset="utf-8"></script>
+</html>

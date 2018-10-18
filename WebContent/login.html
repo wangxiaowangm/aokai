@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<style>
+		/*web background*/
+		
+		.container {
+			display: table;
+			height: 100%;
+			margin-top: 100px;
+		}
+		
+		.row {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		
+		.row-centered {
+			text-align: center;
+		}
+		
+		.col-centered {
+			display: inline-block;
+			float: none;
+			text-align: left;
+			margin-right: -4px;
+		}
+	</style>
+	</head>
+
+	<body style="background-image: url(img/timg.jpg); ">
+		<div class="container">
+			<div class="row row-centered">
+				<div class="well col-md-6 col-centered">
+					<h3><img src="img/favicon-1.ico"/>欢迎登录奥凯航空</h3>
+					<div class="form-group">
+						<div class="input-group input-group-md ">
+							<span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" id="userid" name="userid" placeholder="请输入用户ID" />
+						</div>
+						<div class="input-group input-group-md " style="margin-top: 30px;">
+							<span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+							<input type="password" class="form-control" id="password" name="password" placeholder="请输入密码" />
+							<span class="input-group-addon add-on" id="sizing-addon1" style="cursor: pointer;" onclick="showAndHide()"><i id="icon" class="glyphicon glyphicon-eye-close"></i></span>
+						</div>
+						<div class="input-group input-group-md " style="margin-top: 30px;">
+							<span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-check" aria-hidden="true"></i></span>
+							<input type="text" class="form-control" id="code" placeholder="请输入验证码" />
+						</div>
+						<div style="text-align: right;">
+							<canvas id="canvas" style="cursor: pointer;" onclick="createVerificationCode()"></canvas>
+						</div>
+						<div id="alert" style="text-align: center; color: red;margin-top: 20px;"></div>
+						<div style=" text-align: center; ">
+							<button type="button " class="btn btn-success " onclick="checkLogin() " style="width: 200px; margin-top: 50px; ">登录</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.js" type="text/javascript " charset="utf-8 "></script>
+	<script src="js/login.js" type="text/javascript " charset="utf-8 "></script>
+	<script src="bootstrap/js/bootstrap.js" type="text/javascript " charset="utf-8 "></script>
+
+</html>

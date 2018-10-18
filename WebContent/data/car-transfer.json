@@ -1,0 +1,38 @@
+[
+	{
+		"name": "大牵引车",
+		"number": "CAR020202-00004-1502757850034",
+		"price": "50,000.00",
+		"quantity": "1",
+		"possessor": "君迪",
+		"recipientsDate": "2017-8-15"
+	}, {
+		"name": "路虎",
+		"number": "CAR020103-00005-1502757244837",
+		"price": "10,000.00",
+		"quantity": "4",
+		"possessor": "林晓",
+		"recipientsDate": "2017-8-15"
+	}, {
+		"name": "大牵引车",
+		"number": "CAR020202-00004-1502757850034",
+		"price": "50,000.00",
+		"quantity": "1",
+		"possessor": "曲苗",
+		"recipientsDate": "2017-8-15"
+	}, {
+		"name": "路虎",
+		"number": "CAR020103-00005-1502757244837",
+		"price": "10,000.00",
+		"quantity": "1",
+		"possessor": "王海川",
+		"recipientsDate": "2017-8-15"
+	}, {
+		"name": "路虎",
+		"number": "CAR020103-00005-1502757244837",
+		"price": "10,000.00",
+		"quantity": "1",
+		"possessor": "王海川",
+		"recipientsDate": "2017-8-15"
+	}
+]
